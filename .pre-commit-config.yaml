@@ -1,14 +1,13 @@
 ci:
-    skip: [
+  skip: [
       # The pre-commit.ci runner has an outdated python version
-      poetry-lock
+      poetry-lock,
     ]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
-      - id: check-docstring-first
       - id: check-merge-conflict
       - id: check-toml
       - id: check-yaml
@@ -17,7 +16,7 @@ repos:
       - id: no-commit-to-branch
       - id: trailing-whitespace
   - repo: https://github.com/python-poetry/poetry
-    rev: '1.8.0'
+    rev: "1.8.0"
     hooks:
       - id: poetry-check
       - id: poetry-lock
@@ -38,8 +37,8 @@ repos:
     hooks:
       - id: black
         language_version: python3
-        args:
-          [
-            "--target-version",
-            "py310",
-          ]
+        args: ["--target-version", "py310"]
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.26.0
+    hooks:
+      - id: typos
