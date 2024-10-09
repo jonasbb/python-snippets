@@ -29,7 +29,7 @@ jobs:
           python-version: "3.10"
           cache: "poetry"
       - run: poetry install
-      - run: pdoc --include-undocumented --docformat markdown --show-source --search python_snippets --output-directory ./output/
+      - run: poetry run pdoc --include-undocumented --docformat markdown --show-source --search python_snippets --output-directory ./output/
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
