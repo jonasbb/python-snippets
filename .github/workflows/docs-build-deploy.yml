@@ -22,12 +22,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: "Install poetry"
+        run: pipx install poetry
       - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
           cache: "poetry"
-      - name: "Install poetry"
-        run: python3 -m pip install poetry
       - run: poetry install
       - run: pdoc --include-undocumented --docformat markdown --show-source --search python_snippets --output-directory ./output/
       - name: Upload Artifact
