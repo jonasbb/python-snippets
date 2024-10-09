@@ -8,12 +8,16 @@ repository = "https://github.com/jonasbb/python-snippets"
 readme = "README.md"
 
 [tool.poetry.dependencies]
+# Sync with CI
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 black = "^24.3.0"
 mypy = "^0.961"
 pytest = "^7.1.2"
+
+[tool.poetry.group.dev.dependencies]
+pdoc = "^14.7.0"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
