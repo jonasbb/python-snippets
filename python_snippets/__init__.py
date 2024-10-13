@@ -1,6 +1,6 @@
 import os
 from collections.abc import Callable
-from typing import IO, TYPE_CHECKING, Any, TypeAlias
+from typing import IO, TYPE_CHECKING, Any, TypeAlias, cast
 
 if TYPE_CHECKING:
     from _typeshed import StrOrBytesPath
@@ -56,7 +56,7 @@ def fopen(
     if ext == ".gz":
         import gzip  # pylint: disable=import-outside-toplevel
 
-        return gzip.open(filename, mode)
+        return cast(IO[Any], gzip.open(filename, mode))
     elif ext == ".xz":
         import lzma  # pylint: disable=import-outside-toplevel
 
