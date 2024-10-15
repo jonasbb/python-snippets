@@ -44,7 +44,7 @@ def fopen(
 
     The function can be used together with the `fileinput` module for simple command line file processing.
 
-    ```python
+    ```python notest
     import fileinput
     for line in fileinput.input(openhook=python_snippets.fopen):
         process(line)
