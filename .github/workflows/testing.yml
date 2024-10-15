@@ -21,7 +21,7 @@ jobs:
           python-version: "3.10"
           cache: "poetry"
       - run: poetry install
-      - run: poetry run pytest
+      - run: poetry run pytest --markdown-docs
 
   typechecking:
     runs-on: ubuntu-latest
