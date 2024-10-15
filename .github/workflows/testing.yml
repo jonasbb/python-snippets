@@ -21,7 +21,9 @@ jobs:
           python-version: "3.10"
           cache: "poetry"
       - run: poetry install
-      - run: poetry run pytest --markdown-docs
+      - run: poetry run pytest --verbose --markdown-docs --md pytest-report.md
+      - name: Create job summary
+        run: cat pytest-report.md >> $GITHUB_STEP_SUMMARY
 
   typechecking:
     runs-on: ubuntu-latest
