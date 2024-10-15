@@ -2,6 +2,8 @@ ci:
   skip: [
       # The pre-commit.ci runner has an outdated python version
       poetry-lock,
+      # There is no network access at pre-commit.ci
+      check-jsonschema,
     ]
 
 repos:
@@ -20,6 +22,7 @@ repos:
     hooks:
       - id: poetry-check
       - id: poetry-lock
+        args: ["--no-update"]
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.18.0
     hooks:
@@ -47,3 +50,8 @@ repos:
     hooks:
       - id: check-dependabot
       - id: check-github-workflows
+      - id: check-jsonschema
+        name: Validate pyproject.toml
+        args: ["--schemafile", "https://json.schemastore.org/pyproject.json"]
+        files: ^pyproject.*
+        types_or: [toml]
