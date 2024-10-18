@@ -7,6 +7,9 @@ version = "0.1.0"
 repository = "https://github.com/jonasbb/python-snippets"
 readme = "README.md"
 
+[tool.poetry.scripts]
+domainsort = "python_snippets.scripts:domainsort"
+
 [tool.poetry.dependencies]
 # Sync with CI
 python = "^3.10"
