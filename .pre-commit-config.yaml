@@ -42,7 +42,7 @@ repos:
         language_version: python3
         args: ["--target-version", "py310"]
   - repo: https://github.com/crate-ci/typos
-    rev: v1.26.8
+    rev: v1.27.0
     hooks:
       - id: typos
   - repo: https://github.com/python-jsonschema/check-jsonschema
