@@ -24,7 +24,7 @@ repos:
       - id: poetry-lock
         args: ["--no-update"]
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.19.0
+    rev: v3.19.1
     hooks:
       - id: pyupgrade
         exclude: "^notebooks/"
@@ -42,7 +42,7 @@ repos:
         language_version: python3
         args: ["--target-version", "py310"]
   - repo: https://github.com/crate-ci/typos
-    rev: v1.28.3
+    rev: v1.28.4
     hooks:
       - id: typos
   - repo: https://github.com/python-jsonschema/check-jsonschema
