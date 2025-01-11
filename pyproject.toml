@@ -1,18 +1,15 @@
-[tool.poetry]
+[project]
 authors = []
 description = ""
 license = "MIT OR Apache-2.0"
 name = "python-snippets"
-version = "0.1.0"
-repository = "https://github.com/jonasbb/python-snippets"
 readme = "README.md"
+requires-python = ">=3.10"
+urls = {source = "https://github.com/jonasbb/python-snippets"}
+version = "0.1.0"
 
-[tool.poetry.scripts]
+[project.scripts]
 domainsort = "python_snippets.scripts:domainsort"
-
-[tool.poetry.dependencies]
-# Sync with CI
-python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.3.0"
