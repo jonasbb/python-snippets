@@ -41,7 +41,7 @@ repos:
         language_version: python3
         args: ["--target-version", "py310"]
   - repo: https://github.com/crate-ci/typos
-    rev: dictgen-v0.3.1
+    rev: v1.29.4
     hooks:
       - id: typos
   - repo: https://github.com/python-jsonschema/check-jsonschema
