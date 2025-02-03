@@ -29,23 +29,23 @@ repos:
         exclude: "^notebooks/"
         args: ["--py3-plus", "--py310-plus"]
   - repo: https://github.com/PyCQA/isort
-    rev: 5.13.2
+    rev: 6.0.0
     # https://github.com/psf/black/blob/main/docs/guides/using_black_with_other_tools.md
     hooks:
       - id: isort
         args: ["--profile=black"]
   - repo: https://github.com/psf/black
-    rev: 24.10.0
+    rev: 25.1.0
     hooks:
       - id: black
         language_version: python3
         args: ["--target-version", "py310"]
   - repo: https://github.com/crate-ci/typos
-    rev: v1.29.4
+    rev: typos-dict-v0.12.4
     hooks:
       - id: typos
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.31.0
+    rev: 0.31.1
     hooks:
       - id: check-dependabot
       - id: check-github-workflows
