@@ -31,7 +31,7 @@ jobs:
       - run: poetry install
       - run: poetry run pdoc --include-undocumented --docformat markdown --show-source --search python_snippets --output-directory ./output/
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: "output/"
           retention-days: 3
