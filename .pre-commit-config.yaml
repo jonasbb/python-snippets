@@ -29,12 +29,12 @@ repos:
         exclude: "^notebooks/"
         args: ["--py3-plus", "--py310-plus"]
   - repo: https://github.com/PyCQA/isort
-    rev: 6.0.1
+    rev: 6.1.0
     # https://github.com/psf/black/blob/main/docs/guides/using_black_with_other_tools.md
     hooks:
       - id: isort
         args: ["--profile=black"]
-  - repo: https://github.com/psf/black
+  - repo: https://github.com/psf/black-pre-commit-mirror
     rev: 25.9.0
     hooks:
       - id: black
