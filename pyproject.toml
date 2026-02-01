@@ -12,7 +12,7 @@ version = "0.1.0"
 domainsort = "python_snippets.scripts:domainsort"
 
 [tool.poetry.group.dev.dependencies]
-black = "^25.1.0"
+black = "^26.1.0"
 mypy = "^1.9.0"
 pdoc = "^15.0.0"
 pytest = "^9.0.1"
