@@ -517,14 +517,14 @@ dev = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "requests
 
 [[package]]
 name = "pytest-markdown-docs"
-version = "0.9.1"
+version = "0.9.2"
 description = "Run markdown code fences through pytest"
 optional = false
 python-versions = ">=3.9"
 groups = ["dev"]
 files = [
-    {file = "pytest_markdown_docs-0.9.1-py3-none-any.whl", hash = "sha256:ec487b77e6ca2724ced2096bba9a00b192d040a7debd3e1131901df2ef7ffdbe"},
-    {file = "pytest_markdown_docs-0.9.1.tar.gz", hash = "sha256:ce5f8a58a901060599b7d54bbe8308f5a1bc63ef0142747c204eff6cd8bef34e"},
+    {file = "pytest_markdown_docs-0.9.2-py3-none-any.whl", hash = "sha256:9c05a5bee48214cb36583d4a5131d3a23b327a8d82c92ae860106053fd7d1f9e"},
+    {file = "pytest_markdown_docs-0.9.2.tar.gz", hash = "sha256:bf7510fdeec90d3e98ac924561c01de8dbaf4c3ad34f2418ed2b0b12e5a3f4f5"},
 ]
 
 [package.dependencies]
