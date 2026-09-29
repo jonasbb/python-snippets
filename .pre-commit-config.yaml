@@ -41,11 +41,11 @@ repos:
         language_version: python3
         args: ["--target-version", "py310"]
   - repo: https://github.com/crate-ci/typos
-    rev: v1.50.2
+    rev: v1.50.3
     hooks:
       - id: typos
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.38.0
+    rev: 0.38.2
     hooks:
       - id: check-dependabot
       - id: check-github-workflows
